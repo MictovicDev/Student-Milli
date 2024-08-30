@@ -1,0 +1,141 @@
+.callinfo{
+    display: flex;
+    margin-top: 0;
+    gap: 12px;
+    background: #c35817;
+    align-items: center;
+    height: 45px;
+    color: white;
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.phoneitem{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.phoneitem p{
+  padding: 0;
+}
+
+.socials{
+   display: flex;
+   margin-left: 50%;
+   gap: 10px; 
+}
+
+.nav-bar{
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 55px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  color: white;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.nav-bar ul{
+  display: flex;
+  gap: 25px;
+  font-size: 17px;
+  list-style: none;
+  padding-left: 23%;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.nav-bar ul li {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-bar ul li:hover {
+    color: #e56717;
+}
+
+.nav-bar ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -32px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+
+.nav-bar ul li.active::after {
+  background-color: #e56717;
+  margin-top: 10px;
+}
+
+
+.nav-bar ul li:hover::after {
+  background-color: #e56717;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.download{
+  background: #e56717;
+  padding: 7px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+.icon-p{
+  display: flex;
+  align-items: center;
+  height: 75px;
+  flex-direction: row;
+  /* justify-content: center; */
+  padding-left: 20px;
+  font-size: 30px;
+  padding: 20px;
+  gap: 5px;
+}
+
+.icon-p svg {
+  font-size: 1.5em; 
+}
+
+.icon-p p {
+  margin: 0; 
+  font-weight: bold;
+}
+
+.carousel{
+  position: relative;
+  height: 600px;
+  background-image: url('/carousel-2.jpg');
+  background-size: cover;
+}
+
+.carousel::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+
+
+
+
+
